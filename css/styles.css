@@ -562,6 +562,8 @@ background-color:rgba(255, 255, 255, 0.1);
         letter-spacing: 0.02em;
         margin-top: 24px;
         color: var(--title-text-color);
+        display: flex;
+        justify-content: center;
        }
        .close-button{
         display: flex;
@@ -587,7 +589,7 @@ background-color:rgba(255, 255, 255, 0.1);
        }
 
        .form{
-        width: 360px;
+        width: 100%;
         padding-top:16px;
         margin-left: auto;
         margin-right: auto;
@@ -615,24 +617,30 @@ background-color:rgba(255, 255, 255, 0.1);
        .form-footer input{
         background-color: var(--title-text-color);
         border: 1px solid var(--white-color);
-            font-size: 12px;
-            line-height: 2;
-            color: var(--white-color);
             letter-spacing: 0.04em;
             border-radius: 4px;
             width: 264px;
             height: 40px;
+        padding: 8px 16px;
+       }
+       .form-footer input::placeholder{
+        font-size: 12px;
+        line-height: 2;
+        color: var(--white-color);
+
+
        }
 
        .form-field input,
        .form-field textarea{
         margin: 0;
         padding:8px 38px;
-        border: 1px solid var(--title-text-color);
+        border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         width: 100%;
         position: relative;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
        }
            .form-field textarea{
             padding:8px;
@@ -664,6 +672,7 @@ border: 1px solid var(--logo-web-color);
         display: flex;
             align-items: center;
             margin-top: 16px;
+            
 
        }
        .checkbox-label{
@@ -671,6 +680,7 @@ border: 1px solid var(--logo-web-color);
         display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
        
        }
        .check-icon{
@@ -720,29 +730,22 @@ border: 1px solid var(--logo-web-color);
             bottom:24px;
       }   
 
-      .icon-name
+      .icon-name,
+      .phone-icon,
+      .mail-icon
     {
         position: absolute;
         display: inline-block;
         width: 18px;
         height: 24px;
         left:16px;
-        bottom:8px;
+       top: 50%;
+       transform: translateY(-10%);
         fill: currentColor;
-       
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
       }
    
-    .phone-icon,
-    .mail-icon{
-            position: absolute;
-            display: inline-block;
-            width: 18px;
-            height: 24px;
-            left: 16px;
-            bottom: 8px;
-            fill: currentColor;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
+    
    
           .subscribe-button{
 
