@@ -265,7 +265,9 @@ margin-bottom: 0;
     min-width: 169px;
     text-align: center;
     border: none;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+outline: none;
+
   
 }
 .button-hero:hover,
@@ -412,6 +414,7 @@ margin-bottom: 8px;
     margin-right: auto;
     margin-top: 8px;
     list-style: none;
+    outline: none;
 }
 
 .social-link{
@@ -508,6 +511,7 @@ height: 80px;
 background-color:rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
     
     }
 
@@ -622,6 +626,7 @@ background-color:rgba(255, 255, 255, 0.1);
             width: 264px;
             height: 40px;
         padding: 8px 16px;
+        outline: none;
        }
        .form-footer input::placeholder{
         font-size: 12px;
@@ -647,6 +652,9 @@ background-color:rgba(255, 255, 255, 0.1);
            }
            .form-field input:focus{
 border: 1px solid var(--logo-web-color);
+           }
+           .form-field textarea:focus{
+            border: 1px solid var(--logo-web-color);
            }
            
            .form-field .input:focus ~ .icon-name{
@@ -675,14 +683,7 @@ border: 1px solid var(--logo-web-color);
             
 
        }
-       .checkbox-label{
-    
-        display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-       
-       }
+  
        .check-icon{
         display: inline-block;
         width: 16px;
@@ -694,6 +695,8 @@ border: 1px solid var(--logo-web-color);
     background-repeat: no-repeat;
         border-radius: 2px; 
         margin-right: 8px;
+        vertical-align: bottom;
+        cursor: pointer;
        }
        .checkbox-input:checked + .check-icon{
         background-color: var(--logo-web-color);
@@ -706,6 +709,13 @@ border: 1px solid var(--logo-web-color);
 
        .form-field textarea{
         height: 120px;
+       }
+       .form-field textarea::placeholder{
+        font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.04em;
+            color: rgba(46, 47, 66, 0.4);
+            padding-left: 8px;
        }
       .submit-button{
         color: var(--white-color);
@@ -725,9 +735,9 @@ border: 1px solid var(--logo-web-color);
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             margin-left: auto;
             margin-right: auto;
-            position: absolute;
-            left:119px;
-            bottom:24px;
+            margin-top: 24px;
+         display: block;
+            
       }   
 
       .icon-name,
@@ -766,6 +776,7 @@ border: 1px solid var(--logo-web-color);
                 border: none;
                 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
               margin-left: 24px;
+              outline: none;
 
           }
           .send-icon{
