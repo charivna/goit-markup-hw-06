@@ -791,3 +791,8 @@ border: 1px solid var(--logo-web-color);
             display: flex;
           align-items: end;
           }
+
+          .footer form{
+                display: flex;
+                    align-items: end;
+          }
